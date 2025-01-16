@@ -5664,7 +5664,7 @@ jsprim@^1.2.2:
     object.values "^1.1.6"
 
 "jtv-product-card@file:":
-  version "0.1.0"
+  version "0.1.1"
   resolved "file:"
   dependencies:
     jtv-product-card "file:"
