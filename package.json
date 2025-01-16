@@ -7,6 +7,11 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtejadavilca-cursos/jtv-product-card.git"
+  },
+  "homepage": "https://jtv-developer.com",
   "engines": {
     "node": ">=10"
   },
@@ -14,6 +19,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
+    "test:watch": "tsdx test --watch",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -47,14 +53,20 @@
     }
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
     "@rollup/plugin-image": "^3.0.3",
     "@size-limit/preset-small-lib": "^11.1.6",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
+    "@types/react-test-renderer": "^19.0.0",
+    "babel-jest": "^29.7.0",
     "husky": "^9.1.7",
+    "jest": "^29.7.0",
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-test-renderer": "^19.0.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^11.1.6",
     "tsdx": "^0.14.1",
@@ -63,5 +75,17 @@
   },
   "dependencies": {
     "jtv-product-card": "file:"
-  }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
+  "keywords": [
+    "react",
+    "component",
+    "product",
+    "card"
+  ]
 }
